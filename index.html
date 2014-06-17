@@ -16,9 +16,9 @@
     <header class="main-app-header">
       <h1>Ember navigation, subnavigation and nested templates example</h1>
       <ul class"navigation main-navigation">
-        <li class="navigation-item">{{#linkTo "first-section"}}First Section{{/linkTo}}</li>
-        <li class="navigation-item">{{#linkTo "another-section"}}Another Section{{/linkTo}}</li>
-        <li class="navigation-item">{{#linkTo "about"}}About{{/linkTo}}</li>
+        <li class="navigation-item">{{#link-to "first-section"}}First Section{{/link-to}}</li>
+        <li class="navigation-item">{{#link-to "another-section"}}Another Section{{/link-to}}</li>
+        <li class="navigation-item">{{#link-to "about"}}About{{/link-to}}</li>
       </ul>
     </header>
 
@@ -31,22 +31,30 @@
    <header class="sub-header">
       <h2>First Section</h2>
       <ul class"navigation sub-navigation">
-        <li class="navigation-item">{{#linkTo "first-section.part-1"}}Part 1{{/linkTo}}</li>
-        <li class="navigation-item">{{#linkTo "first-section.part-2"}}Part 2{{/linkTo}}</li>
-        <li class="navigation-item">{{#linkTo "first-section.part-3"}}Part 3{{/linkTo}}</li>
+        <li class="navigation-item">{{#link-to "first-section.part-1"}}Part 1{{/link-to}}</li>
+        <li class="navigation-item">{{#link-to "first-section.part-2"}}Part 2{{/link-to}}</li>
+        <li class="navigation-item">{{#link-to "first-section.part-3"}}Part 3{{/link-to}}</li>
       </ul>
    </header>
+
+   <div class="main-content">
+     {{outlet}}
+    </div>
   </script>
 
   <script type="text/x-handlebars" id="another-section">
     <header class="sub-header">
         <h2>Another Section</h2>
         <ul class"navigation sub-navigation">
-          <li class="navigation-item">{{#linkTo "another-section.part-1"}}Part 1{{/linkTo}}</li>
-          <li class="navigation-item">{{#linkTo "another-section.part-2"}}Part 2{{/linkTo}}</li>
-          <li class="navigation-item">{{#linkTo "another-section.part-3"}}Part 3{{/linkTo}}</li>
+          <li class="navigation-item">{{#link-to "another-section.part-1"}}Part 1{{/link-to}}</li>
+          <li class="navigation-item">{{#link-to "another-section.part-2"}}Part 2{{/link-to}}</li>
+          <li class="navigation-item">{{#link-to "another-section.part-3"}}Part 3{{/link-to}}</li>
         </ul>
      </header>
+
+     <div class="main-content">
+     {{outlet}}
+    </div>
   </script>
 
   <script type="text/x-handlebars" id="first-section.part-1">
