@@ -1,0 +1,30 @@
+body {
+  margin: 20px;
+  padding: 0px;
+}
+
+.main-content {
+
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
+
+.main-app-header {}
+
+.sub-header {}
+
+.main-navigation {}
+
+.main-navigation .navigation-item {}
+
+.sub-navigation {}
+
+.sub-navigation .navigation-item {}
