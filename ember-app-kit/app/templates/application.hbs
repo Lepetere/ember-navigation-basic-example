@@ -1,3 +1,12 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<header class="main-app-header">
+      <h1>Ember navigation, subnavigation and nested templates example</h1>
+      <ul class"navigation main-navigation">
+        <li class="navigation-item">{{#link-to "first-section"}}First Section{{/link-to}}</li>
+        <li class="navigation-item">{{#link-to "another-section"}}Another Section{{/link-to}}</li>
+        <li class="navigation-item">{{#link-to "about"}}About{{/link-to}}</li>
+      </ul>
+    </header>
 
-{{outlet}}
+    <div class="main-content">
+     {{outlet}}
+    </div>
