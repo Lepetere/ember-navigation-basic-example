@@ -1,6 +1,4 @@
 App.Router.map(function() {
-
-  this.resource('main-app-layout', { path: '/'});
   
   this.resource('first-section', function () {
   	this.route('part-1');
